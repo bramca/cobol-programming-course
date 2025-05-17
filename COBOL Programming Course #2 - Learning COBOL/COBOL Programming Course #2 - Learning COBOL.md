@@ -24,7 +24,7 @@ toccolor: Blue
 
 This chapter introduces COBOL, specifically regarding its use in enterprise systems.
 
-- **What is COBOL?** 
+- **What is COBOL?**
 
 - **How is COBOL being used today?**
 
@@ -38,7 +38,7 @@ One computer programming language was designed specifically for business, Common
 
 Many COBOL programs have decades of improvements which include business logic, performance, programming paradigm, and application program interfaces to transaction processors, data sources, and the Internet.
 
-Many hundreds of programming languages were developed during the past 60 years with expectations to transform the information technology landscape.  Some of these languages, such as C, C++, Java, and JavaScript, have indeed transformed the ever-expanding information technology landscape.  However, COBOL continues to distinguish itself from other programming languages due to its inherent ability to handle vast amounts of critical data stored in the largest servers such as the IBM Z mainframe. 
+Many hundreds of programming languages were developed during the past 60 years with expectations to transform the information technology landscape.  Some of these languages, such as C, C++, Java, and JavaScript, have indeed transformed the ever-expanding information technology landscape.  However, COBOL continues to distinguish itself from other programming languages due to its inherent ability to handle vast amounts of critical data stored in the largest servers such as the IBM Z mainframe.
 
 Continuously updated to incorporate modernized and proven programming paradigms and best practices, COBOL will remain a critical programming language into the foreseeable future.  Learning COBOL enables you to read and understand the day-to-day operation of critical systems.  COBOL knowledge and proficiency is a required skill to be a "full-stack developer" in large enterprises.
 
@@ -169,7 +169,7 @@ The COBOL reference format is formatted as follows:
 
     - Continuation line (generally a hyphen symbol)
 
-    - Debugging line (D or d) 
+    - Debugging line (D or d)
 
     - Source listing formatting (a slash symbol)
 
@@ -254,13 +254,13 @@ A COBOL “Paragraph” is a user-defined or predefined name followed by a perio
 
 ### What is a COBOL section?
 
-A “Section” is either a user-defined or a predefined name followed by a period and consists of zero or more sentences.  A “Section” is a collection of paragraphs. 
+A “Section” is either a user-defined or a predefined name followed by a period and consists of zero or more sentences.  A “Section” is a collection of paragraphs.
 
 ### How to run a COBOL program on z/OS?
 
 When you are dealing with COBOL on z/OS, you will encounter JCL or Job Control Language. JCL is a set of statements that tell the z/OS operating system about the tasks you want it to perform.
 
-For your COBOL program to be executable in z/OS, you will need to tell the operating system to compile and link-edit the code before running it. All of which will be done using JCL. 
+For your COBOL program to be executable in z/OS, you will need to tell the operating system to compile and link-edit the code before running it. All of which will be done using JCL.
 
 The first thing your JCL should do is compile the COBOL program you have written. In this step, your program is passed to the COBOL compiler to be processed into object code. Next, the output from the compiler will go through the link-edit step. Here a binder will take in the object code and all the necessary libraries and options specified in the JCL to create an executable program. In this step, you can also tell the JCL to include additional data sets which your COBOL program will read. Then, you can run the program.
 
@@ -272,7 +272,7 @@ To simplify things, Enterprise COBOL for z/OS provides three JCL procedures to c
 
 Since this course is a COBOL course, the JCL necessary for you to do the Labs is provided for you. Therefore, you will encounter the procedures listed above on the JCL. If you want to create a new COBOL program, you can copy one of the JCL provided and modify it accordingly.
 
-To read more on JCL, visit the IBM Knowledge Center: 
+To read more on JCL, visit the IBM Knowledge Center:
 
 [https://www.ibm.com/docs/en/zos-basic-skills?topic=collection-basic-jcl-concepts](https://www.ibm.com/docs/en/zos-basic-skills?topic=collection-basic-jcl-concepts)
 
@@ -302,6 +302,7 @@ The IDENTIFICATION DIVISION identifies the program with a name and, optionally, 
 
 The ENVIRONMENT DIVISION describes the aspects of your program that depend on the computing environment, such as the computer configuration and the computer inputs and outputs.
 
+<!-- TODO: Continue  -->
 #### DATA DIVISION
 
 The DATA DIVISION is where characteristics of data are defined in one of the following sections:
@@ -353,7 +354,7 @@ As Enterprise COBOL experience advances, the need for professional documentation
 
 Three ‘Enterprise COBOL for z/OS” manuals are referenced throughout the chapters as sources of additional information, for reference and to advance the level of knowledge. They are:
 
-1. Language Reference - Describes the COBOL language such as program structure, reserved words, etc. 
+1. Language Reference - Describes the COBOL language such as program structure, reserved words, etc.
 
    [https://publibfp.dhe.ibm.com/epubs/pdf/igy6lr40.pdf](https://publibfp.dhe.ibm.com/epubs/pdf/igy6lr40.pdf)
 
@@ -417,7 +418,7 @@ In this lab exercise, you will connect to an IBM Z system, view a simple COBOL h
 
    **Note:** If your list contains both Z Open Editor and COBOL Language Support, disable one of them, by clicking on the **cog** icon next to the extension in the extensions list, and selecting **disable**.
 
-2. Click the Zowe Explorer icon as shown in Figure  3. Zowe Explorer can list Data Sets, Unix System Services (USS) files, and Jobs output. 
+2. Click the Zowe Explorer icon as shown in Figure  3. Zowe Explorer can list Data Sets, Unix System Services (USS) files, and Jobs output.
 
    ![](Images/image046.png)
 
@@ -459,7 +460,7 @@ In this lab exercise, you will connect to an IBM Z system, view a simple COBOL h
 
    *Figure  8a.  LearnCOBOL Connection*
 
-   If the connection does not appear, hover to the far right of the Data Sets line and press the + icon. Afterward, select the **LearnCOBOL** connection as shown in Figure  8b.  
+   If the connection does not appear, hover to the far right of the Data Sets line and press the + icon. Afterward, select the **LearnCOBOL** connection as shown in Figure  8b.
 
    ![](Images/image0005.png)
 
@@ -584,7 +585,7 @@ In this section, we will use the Zowe CLI interactively to view data set members
 
    *Figure  26.  `zowe --version` command in VS Code Integrated Terminal*
 
-2. In order for Zowe CLI to interact with z/OSMF the CLI must know the connection details such as host, port, username, password, etc. While you could enter this information on each command, Zowe provides the ability to store this information in configuration files. 
+2. In order for Zowe CLI to interact with z/OSMF the CLI must know the connection details such as host, port, username, password, etc. While you could enter this information on each command, Zowe provides the ability to store this information in configuration files.
 
    If you have done the configuration in the first lab, you will have a folder containing your team configuration files. Make sure that your terminal is at that location and issue the following command.
 
@@ -652,7 +653,7 @@ In this section, we will use the Zowe CLI interactively to view data set members
    ```
 
    where `JOB04064` was returned from the previous command.
-    
+
    To view a specific spool file (COBRUN:SYSOUT), issue:
 
    ```
@@ -696,7 +697,7 @@ In this section, we will leverage the Zowe CLI programmatically to automate subm
    zowe jobs submit ds 'Z99998.JCL(HELLO)' -d .
    ```
 
-   You can name the script whatever you want. I only suggested `clg` because the `CLG` in the `IGYWCLG` proc (which is what the JCL leverages) stands for compile, link, go. Now, simply issue `npm run clg` in your terminal to leverage the automation to compile, link, and run the COBOL program and download the output for review. An example of the completed `package.json` and command execution are shown in the following figure. 
+   You can name the script whatever you want. I only suggested `clg` because the `CLG` in the `IGYWCLG` proc (which is what the JCL leverages) stands for compile, link, go. Now, simply issue `npm run clg` in your terminal to leverage the automation to compile, link, and run the COBOL program and download the output for review. An example of the completed `package.json` and command execution are shown in the following figure.
 
    ![](Images/npm/npm-run-clg.png)
 
@@ -742,7 +743,7 @@ Following this chapter is a lab available to compile and execute the COBOL sourc
 
 ## Variables / Data-items
 
-A COBOL variable, also known as a data item, is a name and is chosen by the COBOL programmer.  The named variable is coded to hold data where the data value can vary, hence the generic term 'variable'. A COBOL variable name is also known as 'Data Name'.  A COBOL variable name has restrictions. 
+A COBOL variable, also known as a data item, is a name and is chosen by the COBOL programmer.  The named variable is coded to hold data where the data value can vary, hence the generic term 'variable'. A COBOL variable name is also known as 'Data Name'.  A COBOL variable name has restrictions.
 
 
 ### Variable / Data-item name restrictions and data types
@@ -793,7 +794,7 @@ The maximum length of a picture clause is dependent upon the data type and compi
 
 Where cs is any valid currency symbols such as the dollar sign ($).
 
-All PIC clause symbols are described in the [Enterprise COBOL for z/OS Language Reference manual](https://publibfp.dhe.ibm.com/epubs/pdf/igy6lr40.pdf). 
+All PIC clause symbols are described in the [Enterprise COBOL for z/OS Language Reference manual](https://publibfp.dhe.ibm.com/epubs/pdf/igy6lr40.pdf).
 
 
 ### Coding COBOL variable / data-item names
@@ -1155,7 +1156,7 @@ On the other hand, if we are moving to REC-1, the length is determined using the
         05  FIELD-2 OCCURS 1 TO 5 TIMES
             DEPENDING ON FIELD-1          PIC X(05).
     03  REC-2.
-        05  FIELD-4 OCCURS 1 TO 5 TIMES                         
+        05  FIELD-4 OCCURS 1 TO 5 TIMES
             DEPENDING ON FIELD-3          PIC X(05).
 ```
 
@@ -1176,7 +1177,7 @@ For example, assume that we have a list of names:
 ```COBOL
 77  PEOPLE-SEARCH-DATA                PIC X(20).
 01  PEOPLE-SERIAL.
-    05  PEOPLE-NAME  OCCURS 50 TIMES 
+    05  PEOPLE-NAME  OCCURS 50 TIMES
         INDEXED BY PL-IDX            PIC X(20).
 ...
 PROCEDURE-DIVISION.
@@ -1204,7 +1205,7 @@ For example, assume that we have a list of names sorted in ascending order:
 77  PEOPLE-SEARCH-DATA                PIC X(20).
 01  PEOPLE-TABLE-BINARY.
     05  PEOPLE-NAME  OCCURS 50 TIMES
-        ASCENDING KEY IS PEOPLE-NAME 
+        ASCENDING KEY IS PEOPLE-NAME
         INDEXED BY PL-IDX            PIC X(20).
 ...
 PROCEDURE-DIVISION.
@@ -1233,12 +1234,12 @@ The code above will search the alphabetically sorted list of names. If it found 
 
 6. View the compile and execution of SRCHBINJ job output.
 
-7. Compare SRCHSER with SRCHBIN. Do you notice the differences? 
+7. Compare SRCHSER with SRCHBIN. Do you notice the differences?
 
    a. Observe how the tables are defined.
 
    b. Observe how the tables are loaded from the id.DATA data set.
-   
+
    c. Observe the SEARCH and SEARCH ALL statements.
 
 \newpage
@@ -1320,7 +1321,7 @@ The FILE-CONTROL paragraph associates each COBOL internal file name with an exte
 
 *Figure  1.  FILE-CONTROL*
 
- 
+
 
 While SELECT gives a name to an internal file and ASSIGN gives a name to the external dataset name, a COBOL program needs more information about both.  The COBOL compiler is given more information about both in the DATA DIVISION, FILE SECTION.
 
@@ -1354,7 +1355,7 @@ While the SELECT clause name is an internal file name, the ASSIGN clause name is
 
 COBOL code “SELECT ACCT-REC ASSIGN TO ACCTREC” requires a JCL DDNAME ACCTREC with a DD redirecting ACCTREC to a z/OS controlled dataset name, MY.DATA. The COBOL program is shown in Example 1.
 
-The purpose of the redirection of ACCT-REC, via ASSIGN TO, to JCL DDNAME, ACCTREC is flexibility.  ACCT-REC is used in the program itself, ACCTREC is a bridge to JCL, shown in Example 1. , and a DD JCL statement links ACCTREC to an actual dataset, shown in Example 2.  This flexibility allows the same COBOL program to access a different data source with a simple JCL modification avoiding requirement to change the source code to reference the alternate data source. 
+The purpose of the redirection of ACCT-REC, via ASSIGN TO, to JCL DDNAME, ACCTREC is flexibility.  ACCT-REC is used in the program itself, ACCTREC is a bridge to JCL, shown in Example 1. , and a DD JCL statement links ACCTREC to an actual dataset, shown in Example 2.  This flexibility allows the same COBOL program to access a different data source with a simple JCL modification avoiding requirement to change the source code to reference the alternate data source.
 
 
 ```
@@ -1419,7 +1420,7 @@ READ-NEXT-RECORD repeatedly executes READ-RECORD and WRITE-RECORD until the last
 
 *Figure  6.  Reading and writing records*
 
-**Note:** COBOL is English-like and COBOL reserved words are English-like.  The programmer is free to use English-like variable names to help remember the purpose of the variable names.  The PROCEDURE DIVISION structure is English-like.  A paragraph contains one or more sentences.  A sentence contains one or more statements.  The implicit scope terminator, a period (.), terminates a sentence or terminates several consecutive statements which would be analogous to a compounded sentence where ‘and’ joins potentially independent sentences together. 
+**Note:** COBOL is English-like and COBOL reserved words are English-like.  The programmer is free to use English-like variable names to help remember the purpose of the variable names.  The PROCEDURE DIVISION structure is English-like.  A paragraph contains one or more sentences.  A sentence contains one or more statements.  The implicit scope terminator, a period (.), terminates a sentence or terminates several consecutive statements which would be analogous to a compounded sentence where ‘and’ joins potentially independent sentences together.
 ###
 
 
@@ -1457,7 +1458,7 @@ The lab associated with this chapter demonstrates the ‘end-of-file’ COBOL co
 
 **Note**: If you are opening a new instance of VS Code (i.e. you closed out of it after the previous usage), you may need to 'Select a filter' again. You can do so by selecting the search icon ![](Images/image132.png) next to your named connection in the DATA SETS section and then reselecting the filter previously used. It should be in the listed filters after you have selected the search symbol.
 
- 
+
 
 2. View these COBOL source code members listed in the id.CBL data set:
 
@@ -1489,11 +1490,11 @@ The lab associated with this chapter demonstrates the ‘end-of-file’ COBOL co
 
 *Figure  9.  RUN:PRTLINE(103) for JCL(CBL0001J)*
 
- 
+
 
 6. Submit job, JCL(CBL0002J), within the DATA SET section.
 
- 
+
 
 7. View that job output using the JOBS section.
 
@@ -1510,7 +1511,7 @@ The lab associated with this chapter demonstrates the ‘end-of-file’ COBOL co
 
    - Determine the appropriate spelling of PRINT-REX, correct it within the source code, and save the updated source code.
 
- 
+
 
 9. Re-submit job, JCL(CBL0002J), using the DATA SET section and view the output in the JOBS section.
 
@@ -1531,19 +1532,19 @@ The lab associated with this chapter demonstrates the ‘end-of-file’ COBOL co
 
 *Figure  11.  RUN:SYSOUT(104) message*
 
- 
+
 
 12.  Fix this error by editing JCL(CBL0003J):
 
-     - Determine the DDNAME needed, but missing or misspelled. 
+     - Determine the DDNAME needed, but missing or misspelled.
 
      - Correct it within the code and save
 
- 
+
 
 13.  Re-submit job, JCL(CBL0003J), using the DATA SET section.
 
- 
+
 
 14.  View CBL0003J output using the JOBS section, your output should look like Figure  12.
 
@@ -1568,7 +1569,7 @@ The lab associated with this chapter demonstrates the ‘end-of-file’ COBOL co
 
 In this chapter, we discuss the concept of structured programming and how it relates to COBOL.  We highlight the key techniques within the COBOL language that allow you to write good well-structured programs.
 
- 
+
 
 - **Styles of programming**
 
@@ -1631,7 +1632,7 @@ Unstructured programming constructs, also known as spaghetti code, are concepts 
 
 Well-structured code is both easy to understand and to maintain.  It is highly likely that at some point in your career you will be required to read and work from someone else's code, often a decade after it was originally written. It would be extremely helpful to you if the original author structured their code well and likewise if it is your code someone else is reading.
 
- 
+
 
 ### What is Object Orientated Programming
 
@@ -1655,7 +1656,7 @@ Typically, execution in a COBOL program begins at the first statement within the
 ```COBOL
 OPEN OUTPUT PRINT-LINE.
 
-MOVE 'THE NUMBER IS: ' TO MSG-HEADER OF PRINT-REC.  
+MOVE 'THE NUMBER IS: ' TO MSG-HEADER OF PRINT-REC.
 
 ADD 1 TO COUNTER GIVING COUNTER.
 MOVE COUNTER TO MSG-TO-WRITE.
@@ -1663,7 +1664,7 @@ WRITE PRINT-REC.
 
 ADD 1 TO COUNTER GIVING COUNTER.
 MOVE COUNTER TO MSG-TO-WRITE.
-WRITE PRINT-REC. 
+WRITE PRINT-REC.
 
 ...
 
@@ -1683,7 +1684,7 @@ The PERFORM keyword is a very flexible element of the COBOL language, as it allo
 ```COBOL
     OPEN OUTPUT PRINT-LINE.
 
-    MOVE 'THE NUMBER IS: ' TO MSG-HEADER OF PRINT-REC. 
+    MOVE 'THE NUMBER IS: ' TO MSG-HEADER OF PRINT-REC.
 
     PERFORM WRITE-NEW-RECORD.
     PERFORM WRITE-NEW-RECORD.
@@ -1757,7 +1758,7 @@ PERFORM WRITE-NEW-RECORD.
 
 If we were to compile and run the program, you would see that although the job ABENDS (abnormally ends) with a 4038-abend code, it did execute some of the code and wrote the first two lines of the output.  If you were to look at the output in more detail, you would see a message like the following:
 
- 
+
 
 ```
 IGZ0037S The flow of control in program TOTEN1 proceeded beyond the last line of the program.
@@ -1772,7 +1773,7 @@ As we can see, the use of GO TO causes a branch of execution that doesn't return
 
 
 ```COBOL
-0 01  FLAG           PIC 9(1) VALUE 1.   
+0 01  FLAG           PIC 9(1) VALUE 1.
 
 1  OPEN OUTPUT PRINT-LINE.
 2    GO TO SAY-HELLO-WORLD DEPENDING ON FLAG.
@@ -1802,7 +1803,7 @@ This example is using a mix of conditional and non-conditional GO TO statements,
 
 **Note:** Both the TO and ON parts of the conditional GO TO statement can be omitted, giving a statement that looks like GO SAY-HELLO-WORLD DEPENDING FLAG.  Which although is less verbose, is no less easy to understand.
 
-So why teach you something that we have said is messy and not advised?  Well, by giving you some understanding of its behavior, you will be better equipped when looking through existing code and maintaining it. 
+So why teach you something that we have said is messy and not advised?  Well, by giving you some understanding of its behavior, you will be better equipped when looking through existing code and maintaining it.
 
 
 ## Paragraphs as blocks of code
@@ -1811,7 +1812,7 @@ So far in this section, we have used a few examples of paragraphs without really
 
 The most analogous way to think about a paragraph in COBOL is to think of a function or method in another language that accepts no parameters, returns no response, and alters global variables.  It is basically a block of code that performs a sequence of actions that could be used multiple times within the same program.
 
-A paragraph is defined within the procedure division and starts at column eight and can have any name that the user likes, apart from a COBOL keyword, and the declaration of the paragraph is completed with a period (.).  A paragraph can contain one to many COBOL sentences and is terminated either by the start of another paragraph or the physical end of the program. 
+A paragraph is defined within the procedure division and starts at column eight and can have any name that the user likes, apart from a COBOL keyword, and the declaration of the paragraph is completed with a period (.).  A paragraph can contain one to many COBOL sentences and is terminated either by the start of another paragraph or the physical end of the program.
 
 
 **Note:** A paragraph can also be ended by END-PROGRAM, END-METHOD, END FACTORY OR END-OBJECT.  Most of these are used within Object Orientated COBOL which is not discussed here.
@@ -1823,13 +1824,13 @@ Considering that a program can be made up of multiple paragraphs and that the PE
 
 There are no restrictions as to what content can go inside a paragraph, however, there are two main reasons why you might want to refactor code to be inside a paragraph:
 
-1.  To group a sequence of COBOL sentences together that achieve a particular function or task, such as, open all the files that an application is using, calculate a particular function or perform some data validation.  Grouping such sentences into a paragraph allows you to give them a name that explains the purpose of the lines of code. 
+1.  To group a sequence of COBOL sentences together that achieve a particular function or task, such as, open all the files that an application is using, calculate a particular function or perform some data validation.  Grouping such sentences into a paragraph allows you to give them a name that explains the purpose of the lines of code.
 
 2. The sequence of sentences will be used within a loop.  Extracting these lines into a paragraph and then using the PERFORM keyword to create a loop can make for very comprehensible code.
 
- 
 
-Remember that you can also perform other paragraphs within existing paragraphs.  This nested calling of paragraphs can again, help to structure your code. 
+
+Remember that you can also perform other paragraphs within existing paragraphs.  This nested calling of paragraphs can again, help to structure your code.
 
 
 ### Order and naming of paragraphs
@@ -1848,34 +1849,34 @@ There is no requirement about the order that paragraphs should appear within a C
            PERFORM 1000-OPEN-FILES.
            PERFORM 2000-READ-NEXT-RECORD.
            GO TO 3000-CLOSE-STOP.
-       1000-OPEN-FILES.   
+       1000-OPEN-FILES.
            OPEN INPUT  ACCT-REC.
-           OPEN OUTPUT PRINT-LINE.    
-      * 
-       2000-READ-NEXT-RECORD.   
-           PERFORM 4000-READ-RECORD   
-           PERFORM UNTIL LASTREC = 'Y'
-               PERFORM 5000-WRITE-RECORD  
-               PERFORM 4000-READ-RECORD   
-           END-PERFORM. 
+           OPEN OUTPUT PRINT-LINE.
       *
-       3000-CLOSE-STOP. 
+       2000-READ-NEXT-RECORD.
+           PERFORM 4000-READ-RECORD
+           PERFORM UNTIL LASTREC = 'Y'
+               PERFORM 5000-WRITE-RECORD
+               PERFORM 4000-READ-RECORD
+           END-PERFORM.
+      *
+       3000-CLOSE-STOP.
            CLOSE ACCT-REC.
-           CLOSE PRINT-LINE.    
+           CLOSE PRINT-LINE.
            STOP RUN.
-      * 
-       4000-READ-RECORD.  
-           READ ACCT-REC  
+      *
+       4000-READ-RECORD.
+           READ ACCT-REC
                AT END MOVE 'Y' TO LASTREC
            END-READ.
-      * 
-       5000-WRITE-RECORD. 
-           MOVE ACCT-N  -    TO  ACCT-NO-O. 
-           MOVE ACCT-LIMIT   TO  ACCT-LIMIT-O.    
-           MOVE ACCT-BALANCE TO  ACCT-BALANCE-O.  
+      *
+       5000-WRITE-RECORD.
+           MOVE ACCT-N  -    TO  ACCT-NO-O.
+           MOVE ACCT-LIMIT   TO  ACCT-LIMIT-O.
+           MOVE ACCT-BALANCE TO  ACCT-BALANCE-O.
            MOVE LAST-NAME    TO  LAST-NAME-O.
-           MOVE FIRST-NAME   TO  FIRST-NAME-O.    
-           MOVE COMMENTS     TO  COMMENTS-O. 
+           MOVE FIRST-NAME   TO  FIRST-NAME-O.
+           MOVE COMMENTS     TO  COMMENTS-O.
            WRITE PRINT-REC.
 ```
 *Example 8.  Numbered paragraphs*
@@ -1883,18 +1884,18 @@ There is no requirement about the order that paragraphs should appear within a C
 - Lastly, it is common to explicitly end a paragraph by coding an empty paragraph following each paragraph, see Example 9.  This empty paragraph does not contain any code, has the same name as the paragraph it is closing, suffixed with -END, and is in turn closed by the starting of the following paragraph. But it can be used as a visual delimiter and is useful when using the PERFORM THRU keyword, which is discussed further in this chapter. Some Java programmers who have learned COBOL have commented that it is equivalent to the closing brace ("}") at the end of a block of code.
 
 ```COBOL
- 1000-OPEN-FILES.   
+ 1000-OPEN-FILES.
      OPEN INPUT  ACCT-REC.
-     OPEN OUTPUT PRINT-LINE.    
+     OPEN OUTPUT PRINT-LINE.
  1000-OPEN-FILES-END.
-* 
- 2000-READ-NEXT-RECORD.   
-     PERFORM 4000-READ-RECORD   
+*
+ 2000-READ-NEXT-RECORD.
+     PERFORM 4000-READ-RECORD
      PERFORM UNTIL LASTREC = 'Y'
          PERFORM 5000-WRITE-RECORD
          PERFORM 4000-READ-RECORD
      END-PERFORM.
- 2000-READ-NEXT-RECORD-END.   
+ 2000-READ-NEXT-RECORD-END.
 ```
 *Example 9.  Explicitly closed paragraphs*
 
@@ -1905,7 +1906,7 @@ So far in this chapter, we have discussed the importance of using paragraphs to 
 
 ### PERFORM TIMES
 
-Perhaps the simplest way of repeating a perform statement is to use the TIMES keyword to perform a paragraph or sections of code a static number of times, shown in Example 10.   
+Perhaps the simplest way of repeating a perform statement is to use the TIMES keyword to perform a paragraph or sections of code a static number of times, shown in Example 10.
 
 ```COBOL
  PERFORM 10 TIMES
@@ -1930,10 +1931,10 @@ You may require a sequential list of paragraphs to be executed in turn, instead 
 
 
 ```COBOL
- 1000-PARAGRAPH-A.   
+ 1000-PARAGRAPH-A.
      PERFORM 2000-PARAGRAPH-B THRU
              3000-PARAGRAPH-C.
-* 
+*
  2000-PARAGRAPH-B.
      ...
 *
@@ -2037,7 +2038,7 @@ This is really, just two for loops nested within each other.  This construct is 
 
 ## Using subprograms
 
-So far, we have only examined the internal structure of a single COBOL program.  As programs increase in function and number, it is common that a programmer might want certain aspects of a program function to be made available to other programs within the system.  Abstracting generic functions into their own program and allowing them to be called from other programs can reduce the amount of code duplication within a system and therefore decrease the cost of maintenance, as fixes to shared modules only need to be made once. 
+So far, we have only examined the internal structure of a single COBOL program.  As programs increase in function and number, it is common that a programmer might want certain aspects of a program function to be made available to other programs within the system.  Abstracting generic functions into their own program and allowing them to be called from other programs can reduce the amount of code duplication within a system and therefore decrease the cost of maintenance, as fixes to shared modules only need to be made once.
 
 
 **Note:** Although here we will describe the COBOL native way of calling another program, note that some middleware products will provide APIs that might do this in an enhanced way.
@@ -2064,7 +2065,7 @@ It is also possible to reference the target platform by passing a pointer refere
 
 ### Specifying program variables
 
-Now that we have identified the name of the program we wish to call; we must identify the variables that the calling program might want to send.  These are individually specified by the USING keyword.  COBOL provides support to both pass by reference and pass by copy, as well as a pass by value concept.  Each of the supported passing techniques can be applied to all the data items being passed or used selectively against different items.  
+Now that we have identified the name of the program we wish to call; we must identify the variables that the calling program might want to send.  These are individually specified by the USING keyword.  COBOL provides support to both pass by reference and pass by copy, as well as a pass by value concept.  Each of the supported passing techniques can be applied to all the data items being passed or used selectively against different items.
 
 By default, COBOL will pass data items by reference.  This means that both the calling and target program will be able to read and write to the same area of memory that is represented by the variable.  This means that if the target program updates the content of the variable, that change will be visible to the calling program once execution has returned.
 
@@ -2072,11 +2073,11 @@ By default, COBOL will pass data items by reference.  This means that both the c
 
 The BY CONTENT phrase allows a copy of the passed variable to be passed to the target program.  Although the target program can update the variable, those updates will not be visible to the calling program.
 
- 
+
 
 **Note:** When passing variables either BY REFERENCE or BY CONTENT, note you can send data items of any level.  This means you can pass entire data structures, handy for dealing with common records.
 
- 
+
 
 You might also see the phrase, BY VALUE, being used in a CALL sentence.  BY VALUE is similar to BY CONTENT, as a copy of the content of the variable is passed.  The difference is that only a subset of COBOL data types are supported and you can only specify elementary data items.  This is because BY VALUE is primarily used when COBOL is calling a program of another language (such as C).
 
@@ -2116,11 +2117,11 @@ PROCEDURE DIVISION.
 ```
 *Example 23.  Basic COPY*
 
-The statements inside the DOWORK procedure will then follows the DISPLAY statement. 
+The statements inside the DOWORK procedure will then follows the DISPLAY statement.
 
 Unlike subprograms, using copybooks does not transfer control over to another program. But the code written inside the copybooks will only be transferred once during compilation. So further changes to the copybooks will require a recompilation of the program.
 
-On the other hand, the code inside a subprogram will only be invoked during the execution of the program. Therefore, assuming that the subprogram is linked dynamically, we can change it without needing to recompile the calling program. 
+On the other hand, the code inside a subprogram will only be invoked during the execution of the program. Therefore, assuming that the subprogram is linked dynamically, we can change it without needing to recompile the calling program.
 
 ## Summary
 
@@ -2133,9 +2134,9 @@ This lab utilizes COBOL program CBL0033, located within your id.CBL data set, as
 
 #### Using VS Code and Zowe Explorer
 
-1. Take a moment and look over the source code of the COBOL program provided: CBL0033. 
+1. Take a moment and look over the source code of the COBOL program provided: CBL0033.
 
-2. Compare CBL0033 with CBL0001 and CBL0002 from the previous lab. Do you notice the differences? 
+2. Compare CBL0033 with CBL0001 and CBL0002 from the previous lab. Do you notice the differences?
 
    a. Observe the new COUNTER line within the WORKING-STORAGE > DATA DIVISION.
 
@@ -2147,11 +2148,11 @@ This lab utilizes COBOL program CBL0033, located within your id.CBL data set, as
 
 3. Submit job: CBL0033J. This JCL first compiles the program HELLO,
 then compiles CBL0033 and links the result of both compilations
-together. 
+together.
 
 4. View CBL0033J output using the JOBS section and open RUN:PRTLINE, observe the report is identical to CBL0001.
 
-5. View the output of the target program HELLO using the JOBS section and open RUN:SYSOUT. 
+5. View the output of the target program HELLO using the JOBS section and open RUN:SYSOUT.
 
 \newpage
 
@@ -2196,7 +2197,7 @@ The "File handling" section covered the SELECT and respective ASSIGN programmer 
 
 ## FILE DESCRIPTOR
 
-The File Description (FD), previously described under the FILE-CONTROL paragraph section, entry represents the highest level of organization in the FILE SECTION.  The FD entry describes the layout of the file defined by a previous FILE-CONTROL SELECT statement.  Therefore, the FD entry connects the SELECT file name with a defined layout of the file name.  An example file descriptor, FD, for PRINT-LINE is shown in Figure  2.  What follows the file descriptor is a defined layout of PRINT-LINE. 
+The File Description (FD), previously described under the FILE-CONTROL paragraph section, entry represents the highest level of organization in the FILE SECTION.  The FD entry describes the layout of the file defined by a previous FILE-CONTROL SELECT statement.  Therefore, the FD entry connects the SELECT file name with a defined layout of the file name.  An example file descriptor, FD, for PRINT-LINE is shown in Figure  2.  What follows the file descriptor is a defined layout of PRINT-LINE.
 
 ### FILLER
 
@@ -2217,7 +2218,7 @@ Writing report or column headers requires a structured output layout designed by
 
     - Example: ‘Financial Report for’
 
- 
+
 
 - **HEADER-2:**
 
@@ -2288,7 +2289,7 @@ This lab utilizes two COBOL programs, CBL0004, and CBL0005, located within your 
 
 1. Submit job: CBL0004J
 
- 
+
 
 2. Observe the report written with headers like Figure  6. below.
 
@@ -2323,9 +2324,9 @@ This lab utilizes two COBOL programs, CBL0004, and CBL0005, located within your 
 
 # Conditional expressions
 
-This chapter dives into how programs make decisions based upon the programmer's written logic.  Specifically, programs make these decisions within the PROCEDURE DIVISION of the source code.  We will expand on several topics regarding conditional expressions written in COBOL through useful explanations, examples, and eventually practicing implementation through a lab. 
+This chapter dives into how programs make decisions based upon the programmer's written logic.  Specifically, programs make these decisions within the PROCEDURE DIVISION of the source code.  We will expand on several topics regarding conditional expressions written in COBOL through useful explanations, examples, and eventually practicing implementation through a lab.
 
- 
+
 
 - **Boolean logic, operators, operands, and identifiers**
 
@@ -2368,7 +2369,7 @@ This chapter dives into how programs make decisions based upon the programmer's 
 
 Programs make decisions based on the programmer's written logic.  Program decisions are made using Boolean logic where a conditional expression is either true or false, yes or no.  A simple example would be a variable named 'LANGUAGE'.   Many programming languages exist; therefore, the value of variable LANGUAGE could be Java, COBOL, etc...  Assume the value of LANGUAGE is COBOL.  Boolean logic is, IF LANGUAGE = COBOL, THEN DISPLAY COBOL, ELSE DISPLAY NOT COBOL.  IF triggers the Boolean logic to determine the condition of true/false, yes/no, applied to LANGUAGE = COBOL which is the conditional expression.  The result of the IF condition executes what follows THEN when the condition is true and executes what follows ELSE when the condition is false.
 
-The Boolean IF verb operates on two operands or identifiers.  In the example above, LANGUAGE is an operand and COBOL is an operand.  A Boolean relational operator compares the values of each operand. 
+The Boolean IF verb operates on two operands or identifiers.  In the example above, LANGUAGE is an operand and COBOL is an operand.  A Boolean relational operator compares the values of each operand.
 
 
 ### COBOL conditional expressions and operators
@@ -2381,11 +2382,11 @@ Three of the most common type of COBOL conditional expressions are:
 
   3.  Sign condition
 
- 
+
 
 A list of COBOL Boolean relational operators for each of the common types of COBOL conditional expressions is represented in Figures 1, 2, and 3 below.
 
- 
+
 
 ![](Images/image149.png)
 
@@ -2430,17 +2431,17 @@ Thus far in this book, we have touched upon the necessity and use of COBOL reser
 
 ### IF, EVALUATE, PERFORM and SEARCH
 
-These are COBOL reserved words available for the processing of conditional expressions, where a condition is a state that can be set or changed. 
+These are COBOL reserved words available for the processing of conditional expressions, where a condition is a state that can be set or changed.
 
 ### Conditional states
 
-TRUE and FALSE are among the most common conditional states.  
+TRUE and FALSE are among the most common conditional states.
 
 ### Conditional names
 
 A conditional name is a programmer-defined variable name with the TRUE condition state.  Conditional names are declared in the WORKING STORAGE SECTION with an 88-level number.  The purpose of 88-level is to improve readability by simplifying IF and PERFORM UNTIL statements.
 
-The 88-level conditional data name is assigned a value at compile time.  The program cannot change the 88-level data name during program execution. However, the program can change the data name value in the level number above the 88-level conditional data name.  01-level USA-STATE in Example 1. can be changed.  A program expression referencing the 88-level data name is only true when the current value of the preceding level data name, USA-STATE, is equal to the WORKING-STORAGE 88-level conditional data-name assigned value. 
+The 88-level conditional data name is assigned a value at compile time.  The program cannot change the 88-level data name during program execution. However, the program can change the data name value in the level number above the 88-level conditional data name.  01-level USA-STATE in Example 1. can be changed.  A program expression referencing the 88-level data name is only true when the current value of the preceding level data name, USA-STATE, is equal to the WORKING-STORAGE 88-level conditional data-name assigned value.
 
 Observe in Example 1.  'The State is not Texas' is written as a result of the first IF STATE because the value of USA-STATE is AZ which is not equal to the 88-level conditional data name, TX.  The second IF STATE writes, 'The State is Texas' because the value of USA-STATE is equal to the assigned 88-level value of TX.
 
@@ -2498,7 +2499,7 @@ MOVE 'TX' TO STATE.
 ....
 IF STATE = 'TX' DISPLAY 'The State is Texas'
    ELSE DISPLAY  'The State is not Texas'
-END-IF.  
+END-IF.
 ```
 *Example 2.  Without 88-level conditional name*
 
@@ -2616,7 +2617,7 @@ SEARCH FACIAL-EXP
     WHEN HAPPY(INX-A) DISPLAY 'I am glad you are happy'
 END-SEARCH
 ```
-*Example 7. SEARCH WHEN statement*           
+*Example 7. SEARCH WHEN statement*
 
 ## Conditions
 
@@ -2686,9 +2687,9 @@ This lab requires two COBOL programs, CBL0006 and CBL0007, and two respective JC
 
 #### Using VS Code and Zowe Explorer:
 
-1. Take a moment and look over the source code of the two COBOL programs provided: CBL0006 and CBL0007. 
+1. Take a moment and look over the source code of the two COBOL programs provided: CBL0006 and CBL0007.
 
-2. Compare CBL0006 with CBL0005 from the previous lab.  Do you notice the differences? 
+2. Compare CBL0006 with CBL0005 from the previous lab.  Do you notice the differences?
 
    a. Observe the new CLIENTS-PER-STATE line within the WORKING-STORAGE > PROCEDURE DIVISION.
 
@@ -2722,7 +2723,7 @@ This lab requires two COBOL programs, CBL0006 and CBL0007, and two respective JC
 
 *Figure  5.  Successful compile*
 
-**Lab Hints** 
+**Lab Hints**
 
 ![](Images/image155.png)
 
@@ -2730,9 +2731,9 @@ This lab requires two COBOL programs, CBL0006 and CBL0007, and two respective JC
 
 # Arithmetic expressions
 
-This chapter aims to introduce the concept of implementing arithmetic expressions in COBOL programs.  We will review the basic concept of arithmetic expressions, operators, statements, limitations, statement operands, as well as precedence of operation within the expressions.  You will be able to follow along with a comprehensive example exhibiting the usage of arithmetic expressions in a COBOL program that you have seen in previous chapters and labs.  Following the chapter is a lab to practice the implementation of what you have learned. 
+This chapter aims to introduce the concept of implementing arithmetic expressions in COBOL programs.  We will review the basic concept of arithmetic expressions, operators, statements, limitations, statement operands, as well as precedence of operation within the expressions.  You will be able to follow along with a comprehensive example exhibiting the usage of arithmetic expressions in a COBOL program that you have seen in previous chapters and labs.  Following the chapter is a lab to practice the implementation of what you have learned.
 
- 
+
 
 - **What is an arithmetic expression?**
 
@@ -2785,9 +2786,9 @@ Binary operator | Meaning | Unary operator | Meaning
 --- | --- | --- | ---
 + | Addition | + | Multiplication by +1
 - | Subtraction | - | Multiplication by -1
-\* | Multiplication |  | 
-/ | Division |  | 
-\*\* | Exponentiation |  | 
+\* | Multiplication |  |
+/ | Division |  |
+\*\* | Exponentiation |  |
 
 *Table 1.  Arithmetic operators*
 
@@ -2826,7 +2827,7 @@ Parentheses are used to denote modifications to the normal order of operations (
 Parentheses either eliminate ambiguities in logic where consecutive operations appear at the same hierarchic level or modify the normal hierarchic sequence of execution when necessary.  When the order of consecutive operations at the same hierarchic level is not completely specified by parentheses, the order is from left to right.
 
 
-An arithmetic expression can begin only with a left parenthesis, a unary operator, or an operand (that is, an identifier or a literal).  It can end only with a right parenthesis or an operand.  An arithmetic expression must contain at least one reference to an identifier or a literal. 
+An arithmetic expression can begin only with a left parenthesis, a unary operator, or an operand (that is, an identifier or a literal).  It can end only with a right parenthesis or an operand.  An arithmetic expression must contain at least one reference to an identifier or a literal.
 
 There must be a one-to-one correspondence between left and right parentheses in an arithmetic expression, with each left parenthesis placed to the left of its corresponding right parenthesis.  If the first operator in an arithmetic expression is a unary operator, it must be immediately preceded by a left parenthesis if that arithmetic expression immediately follows an identifier or another arithmetic expression.
 
@@ -2844,7 +2845,7 @@ The data descriptions of operands in an arithmetic statement need not be the sam
 
 ### Size of operands
 
-If the ARITH(COMPAT) compiler option is in effect, the maximum size of each operand is 18 decimal digits.  If the ARITH(EXTEND) compiler option is in effect, the maximum size of each operand is 31 decimal digits. 
+If the ARITH(COMPAT) compiler option is in effect, the maximum size of each operand is 18 decimal digits.  If the ARITH(EXTEND) compiler option is in effect, the maximum size of each operand is 31 decimal digits.
 
 The composite of operands is a hypothetical data item resulting from aligning the operands at the decimal point and then superimposing them on one another.  How to determine the composite of operands for arithmetic statements is shown in Table 2.
 
@@ -2853,7 +2854,7 @@ If the ARITH(COMPAT) compiler option is in effect, the composite of operands can
 
 Statement | Determination of the composite of operands
 --- | ---
-SUBTRACT, ADD | Superimposing all operands in a given statement, except those following the word GIVING. 
+SUBTRACT, ADD | Superimposing all operands in a given statement, except those following the word GIVING.
 MULTIPLY | Superimposing all receiving data-items
 DIVIDE | Superimposing all receiving data items except the REMAINDER data-item
 COMPUTE | Restriction does not apply
@@ -2862,7 +2863,7 @@ COMPUTE | Restriction does not apply
 
 In all arithmetic statements, it is important to define data with enough digits and decimal places to ensure the required accuracy in the result.  Arithmetic precision details are available in the [IBM Enterprise COBOL Programming Guide Appendix A](https://publibfp.dhe.ibm.com/epubs/pdf/igy6pg40.pdf).
 
- 
+
 
 Additionally, in the IBM Enterprise COBOL Language Reference, Chapter 20. "PROCEDURE DIVISION Statements", includes a detailed explanation of DIVIDE and COMPUTE statement capabilities applied to ROUNDING and ON SIZE ERROR handling.
 
@@ -2903,7 +2904,7 @@ The WRITE-TLIMIT-TBALANCE paragraph shown in Figure  5. is positioned within the
 
 *Figure  5.  WRITE-TLIMIT-TBALANCE*
 
- 
+
 
 <a name="_Ref36026709"></a>
 
@@ -2915,11 +2916,11 @@ This lab requires two COBOL programs, CBL0008 and CBL0009, and two respective JC
 
 1. Take a moment and look over the source code of the two COBOL programs provided: CBL0008 and CBL0009.
 
- 
+
 
 2. Submit CBL0008J
 
- 
+
 
 3. Observe report written with trailers consisting of limit and balance totals at the bottom of the output.
 
@@ -2927,15 +2928,15 @@ This lab requires two COBOL programs, CBL0008 and CBL0009, and two respective JC
 
 *Figure  6.  Limit and balance totals*
 
- 
+
 
 4. Submit CBL0009J
 
- 
 
-5. Was the job successful? If not, find the compilation error message to understand why.  
 
- 
+5. Was the job successful? If not, find the compilation error message to understand why.
+
+
 
 6. Modify id.CBL(CBL0009), correcting the compilation error.\*
 
@@ -2943,11 +2944,11 @@ This lab requires two COBOL programs, CBL0008 and CBL0009, and two respective JC
 
 *Figure  7.  IGYPS2121-S error message*
 
- 
+
 
 7. Re-submit CBL0009J
 
- 
+
 
 8. Validate that the syntax error was corrected by getting an error-free output file like in Figure  8. The correction should report written with trailers consisting of limit and balance totals, like Figure  6.
 
@@ -2963,7 +2964,7 @@ This lab requires two COBOL programs, CBL0008 and CBL0009, and two respective JC
 
 # Data types
 
-A COBOL programmer must be aware that the computer stored internal data representation and formatting can differ, where the difference must be defined in the COBOL source code.  Understanding the computer's internal data representation requires familiarity with binary, hexadecimal, ASCII, and EBCDIC.  Packed-Decimal is needed to explain COBOL Computational and Display data format.  This chapter aims to familiarize the reader with these different "types" of data representation. 
+A COBOL programmer must be aware that the computer stored internal data representation and formatting can differ, where the difference must be defined in the COBOL source code.  Understanding the computer's internal data representation requires familiarity with binary, hexadecimal, ASCII, and EBCDIC.  Packed-Decimal is needed to explain COBOL Computational and Display data format.  This chapter aims to familiarize the reader with these different "types" of data representation.
 
 - **Data representation**
 
@@ -3006,7 +3007,7 @@ COMP-4 is only capable of representing integers.  Compared to COMP-1 and COMP-2,
 
 #### COMP-5
 
-COMP-5 is based on COMP-4, but with the flexibility of specifying the position of a decimal point.  COMP-5 has the space efficiency of COMP-4 and the exactness of COMP-3.  Unlike COMP-3, however, a COMP-5 value cannot exceed 18 decimal digits. 
+COMP-5 is based on COMP-4, but with the flexibility of specifying the position of a decimal point.  COMP-5 has the space efficiency of COMP-4 and the exactness of COMP-3.  Unlike COMP-3, however, a COMP-5 value cannot exceed 18 decimal digits.
 
 
 ### Text representation
@@ -3015,11 +3016,11 @@ COBOL programs often need to represent text data such as names and addresses.
 
 #### EBCDIC
 
-Extended Binary Coded Decimal Interchange Code (EBCDIC) is an eight binary digits character encoding standard, where the eight digital positions are divided into two pieces.  EBCDIC was devised in the early 1960s for IBM computers.  EBCDIC is used to encode text data so that text can be printed or displayed correctly on devices that also understand EBCDIC.   
+Extended Binary Coded Decimal Interchange Code (EBCDIC) is an eight binary digits character encoding standard, where the eight digital positions are divided into two pieces.  EBCDIC was devised in the early 1960s for IBM computers.  EBCDIC is used to encode text data so that text can be printed or displayed correctly on devices that also understand EBCDIC.
 
 #### ASCII
 
-American Standard Code for Information Interchange, ASCII, is another binary digit character encoding standard. 
+American Standard Code for Information Interchange, ASCII, is another binary digit character encoding standard.
 
 #### EBCDIC vs ASCII
 
@@ -3047,26 +3048,26 @@ What happens when an internal packed decimal field is not described using COMP-3
 
 1. Submit the job, id.JCL(CBL0010J)
 
-2. Observe that the compilation of the COBOL source was successful, however, also observe that the execution of the job failed.  How can you tell? 
+2. Observe that the compilation of the COBOL source was successful, however, also observe that the execution of the job failed.  How can you tell?
 
    There's no CC code next to CBL0010J(JOB#). Instead, there is an ABENDU4038 message.  U4038 is a common user code error typically involving a mismatch between the external data and the COBOL representation of the data.
 
- 
+
 
 3. Read the execution SYSOUT message carefully.  The SYSOUT message mistakenly believes the records are 174 characters in length while the program believes the records are 170 characters in length.
 
     **Explanation**: Packed decimal (COMP-3) expands into two numbers where only one number would typically exist.  If the program reads a packed decimal field without describing the field as COMP-3, then program execution becomes confused about the size of the record because the PIC clause, S9(7)V99, is expecting to store seven numbers plus a sign digit when only three word positions are read.  Therefore, execution reports a four-record length position discrepancy.
 
- 
+
 
 4. Edit id.CBL(CBL0010) to identify and correct the source code problem.\*
 
- 
+
 
 5. Submit id.JCL(CBL0010J) and verify correction is successful with a CC 0000 code.
 
 
-***Lab Hints:*** 
+***Lab Hints:***
 
  The ACCT-LIMIT PIC clause in the ACCT-FIELDS paragraph should be the same as the PIC clause for ACCT-BALANCE.
 
@@ -3074,15 +3075,15 @@ What happens when an internal packed decimal field is not described using COMP-3
 
 # Intrinsic functions
 
-Today’s COBOL is not your parents' COBOL.  Today’s COBOL includes decades of feature/function-rich advancements and performance improvements.  Decades of industry specifications are applied to COBOL to address the growing needs of businesses.  What Enterprise COBOL for z/OS promised and delivered, is decades of upward compatibility with new releases of hardware and operating system software.  The original DNA of COBOL evolved into a powerful, maintainable, trusted, and time-tested computer language with no end in sight. 
+Today’s COBOL is not your parents' COBOL.  Today’s COBOL includes decades of feature/function-rich advancements and performance improvements.  Decades of industry specifications are applied to COBOL to address the growing needs of businesses.  What Enterprise COBOL for z/OS promised and delivered, is decades of upward compatibility with new releases of hardware and operating system software.  The original DNA of COBOL evolved into a powerful, maintainable, trusted, and time-tested computer language with no end in sight.
 
-Among the new COBOL capabilities is JSON GENERATE and JSON PARSE, providing an easy to use coding mechanism to transform DATA DIVISION defined data-items into JSON for a browser, a smartphone, or any IoT (Internet of Things) device to format in addition to transforming JSON received from a browser, a smartphone, or any IoT device into DATA DIVISION defined data-items for processing.  Frequently, the critical data accessed by a smartphone, such as a bank balance, is stored and controlled by z/OS where a COBOL program is responsible for retrieving and returning the bank balance to the smartphone.  COBOL has become a web-enabled computer language. 
+Among the new COBOL capabilities is JSON GENERATE and JSON PARSE, providing an easy to use coding mechanism to transform DATA DIVISION defined data-items into JSON for a browser, a smartphone, or any IoT (Internet of Things) device to format in addition to transforming JSON received from a browser, a smartphone, or any IoT device into DATA DIVISION defined data-items for processing.  Frequently, the critical data accessed by a smartphone, such as a bank balance, is stored and controlled by z/OS where a COBOL program is responsible for retrieving and returning the bank balance to the smartphone.  COBOL has become a web-enabled computer language.
 
 Previous COBOL industry specifications included intrinsic functions, which remain largely relevant today.  An experienced COBOL programmer needs to be familiar with intrinsic functions and stay aware of any new intrinsic functions introduced.  This chapter aims to cover the foundation of intrinsic functions and their usage in COBOL.
 
- 
 
- 
+
+
 
 - **What is an intrinsic function?**
 
@@ -3140,7 +3141,7 @@ The code shown in Example 1 above, displays the following messages on the system
 `hello world!`
 `HELLO WORLD!`
 
- 
+
 
 ### Categories of intrinsic functions
 
@@ -3158,7 +3159,7 @@ The intrinsic functions can be grouped into six categories, based on the type of
 
 6. General
 
- 
+
 
 Intrinsic functions operate against alphanumeric, national, numeric, and integer data items.
 
@@ -3285,9 +3286,9 @@ This lab requires two COBOL programs, CBL0011 and CBL0012, and two respective JC
 
 1. Submit job, CBL0011J.
 
- 
 
-2. Observe the report output, last name, with first character upper-case and the remaining characters lower-case. 
+
+2. Observe the report output, last name, with first character upper-case and the remaining characters lower-case.
 
    Figure  1. , below, illustrates the difference in output from the Data types lab compared to this lab.  Notice that in the previous lab, the last names were listed in all capitalized characters, whereas, as previously stated, this lab output has only the first character of the last name capitalized.
 
@@ -3295,29 +3296,29 @@ This lab requires two COBOL programs, CBL0011 and CBL0012, and two respective JC
 
 *Figure  1.  Current lab vs. Data types lab output*
 
- 
+
 
 3. Observe the PROCEDURE DIVISION intrinsic function, lower-case, within the WRITE-RECORD paragraph.  This intrinsic function is paired with a reference modification resulting in an output of last name with upper-case first character and the remainder in lower-case.
 
- 
+
 
 4.  Submit CBL0012J
 
- 
+
 
 5.  Observe the compilation error.
 
 Previous lab programs made use of a date/time intrinsic function.  The date/time intrinsic function in this lab has a syntax error that needs to be identified and corrected.
 
- 
+
 
 6.  Modify id.CBL(CBL0012) correcting compilation error.\*
 
- 
+
 
 7. Re-submit CBL0012J
 
- 
+
 
 8. Corrected CBL0012 source code should compile and execute the program successfully.  A successful compile will result in the same output as CBL0011J.
 
@@ -3331,7 +3332,7 @@ Refer to CBL0011 line 120 for the proper formatting of the function-name causing
 
 When you do the labs on the previous chapters, you may have encountered an abnormal end or ABEND for short. There are various categories of common COBOL errors which cause ABEND, and in production, software errors can be costly - both in financial and reputation.
 
-This chapter introduces ABEND and gives an overview of frequent ABEND types which a COBOL application programmer may encounter. We will review possible reasons and frequent causes of the ABEND types for the programmer to debug. We will also review some common best practices to avoid ABEND and review reasons why a programmer may purposedly call an ABEND routine in their application. 
+This chapter introduces ABEND and gives an overview of frequent ABEND types which a COBOL application programmer may encounter. We will review possible reasons and frequent causes of the ABEND types for the programmer to debug. We will also review some common best practices to avoid ABEND and review reasons why a programmer may purposedly call an ABEND routine in their application.
 
 
 - **Why does ABEND happen?**
