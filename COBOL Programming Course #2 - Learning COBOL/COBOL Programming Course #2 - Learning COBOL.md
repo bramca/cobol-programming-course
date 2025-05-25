@@ -710,7 +710,6 @@ In this section, we will leverage the Zowe CLI programmatically to automate subm
 
 \newpage
 
-<!-- TODO: Continue -->
 # Data division
 
 Understanding COBOL variables and program processing of variables are essential to effectively learning the COBOL language.  An experienced COBOL programmer must master the characteristics of COBOL variables and the program processing using the variables introduced in this chapter.  The objective is to introduce the reader to the basics of COBOL variables while exposing the reader to the many advanced COBOL variable options.
@@ -900,7 +899,7 @@ That is because you submitted the job from the .CBL data set and not the .JCL da
 *Figure  5.  Compare job compiles*
 
 The difference is the return/completion code associated with each job output, located both next to the job output name within the JOBS section as shown above, or at the end of the compile output as, 0Return code ##. A return code of 12 means there was an error, but how do we know what that error was? Continue to find out!
-
+<!-- TODO: Continue -->
 7. Find the compilation error, IGYPA3146-S, in the job output, illustrated in Figure  6.
 
 ![](Images/image121.png)
