@@ -302,7 +302,6 @@ The IDENTIFICATION DIVISION identifies the program with a name and, optionally, 
 
 The ENVIRONMENT DIVISION describes the aspects of your program that depend on the computing environment, such as the computer configuration and the computer inputs and outputs.
 
-<!-- TODO: Continue  -->
 #### DATA DIVISION
 
 The DATA DIVISION is where characteristics of data are defined in one of the following sections:
@@ -711,6 +710,7 @@ In this section, we will leverage the Zowe CLI programmatically to automate subm
 
 \newpage
 
+<!-- TODO: Continue -->
 # Data division
 
 Understanding COBOL variables and program processing of variables are essential to effectively learning the COBOL language.  An experienced COBOL programmer must master the characteristics of COBOL variables and the program processing using the variables introduced in this chapter.  The objective is to introduce the reader to the basics of COBOL variables while exposing the reader to the many advanced COBOL variable options.
