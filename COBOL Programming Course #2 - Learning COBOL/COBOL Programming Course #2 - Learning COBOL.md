@@ -899,7 +899,7 @@ That is because you submitted the job from the .CBL data set and not the .JCL da
 *Figure  5.  Compare job compiles*
 
 The difference is the return/completion code associated with each job output, located both next to the job output name within the JOBS section as shown above, or at the end of the compile output as, 0Return code ##. A return code of 12 means there was an error, but how do we know what that error was? Continue to find out!
-<!-- TODO: Continue -->
+
 7. Find the compilation error, IGYPA3146-S, in the job output, illustrated in Figure  6.
 
 ![](Images/image121.png)
@@ -1449,6 +1449,7 @@ Again, the READ-RECORD paragraph executes the COBOL READ statement, resulting in
 *Figure  7.  Iterative processing*
 
 
+<!-- TODO: Continue -->
 ## Lab
 
 The lab associated with this chapter demonstrates the ‘end-of-file’ COBOL coding technique for reading all data records from a sequential file. If a step has an asterisk (\*) next to it, it will have a hint associated at the end of the lab content.
